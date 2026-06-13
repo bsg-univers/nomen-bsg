@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-BSG.png">
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-BSG.png">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-nomen.png">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-nomen.png">
 
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
@@ -1210,7 +1210,7 @@ audio {
     <div id="episodes_list"></div>
 </div>
 <a href="https://baleinesousgravillon.com/" target="_blank" id="logo-link">
-    <img id="player-img" class="is-logo" src="https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-BSG.png" alt="Logo">
+    <img id="player-img" class="is-logo" src="https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-nomen.png" alt="Logo">
 </a>
 <div class="player-container">
 
@@ -1231,7 +1231,7 @@ audio {
         </div>
     </div>
         <button id="whale-btn" class="bsg-whale-btn" aria-label="Lecture / Pause">
-            <img src="https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/queue-baleine.png" alt="whale tail">
+            <img src="https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/nomen.png" alt="owl">
         </button>
 </div>
 
@@ -1391,7 +1391,7 @@ async function loadPlaylists() {
  function resetPlayerImage() {
     const pImg = document.getElementById('player-img');
     if (pImg) {
-        pImg.src = "https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-BSG.png";
+        pImg.src = "https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-nomen.png";
         pImg.classList.remove('is-episode', 'zoomed');
         pImg.classList.add('is-logo');
     }
@@ -2019,7 +2019,7 @@ async function play(i) {
       pImg.src = episode.image;
       pImg.classList.replace('is-logo', 'is-episode');
     } else {
-      pImg.src = "https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-BSG.png";
+      pImg.src = "https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-nomen.png";
       pImg.classList.replace('is-episode', 'is-logo');
     }
   }
@@ -2128,7 +2128,7 @@ function updateMediaSession(episode) {
         album: "Le podcast du Vivant",
         artwork: [
             {
-                src: episode.image || "https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-BSG.png",
+                src: episode.image || "https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-nomen.png",
                 sizes: "512x512",
                 type: "image/png"
             }
@@ -2186,7 +2186,7 @@ window.addEventListener('scroll', function() {
         logo.style.opacity = Math.max(opacity, 0);
     }
 });
-document.getElementById('player-img').src = "https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-BSG.png"; 
+document.getElementById('player-img').src = "https://raw.githubusercontent.com/bsg-univers/lecteur-bsg/refs/heads/main/media/logo-nomen.png"; 
 </script>
     <div id="toast">Lien de la série copié !</div>
 </body>
